@@ -233,75 +233,7 @@
 <br>
 <br>
 <br>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4">
-		
-		</div>
-		<div class="col-md-4">
-      <h3 style="text-align: center;">Du kannst dein deffektes Gerät zu uns versenden und wir senden es dir repariert zurück. 
-Lege in das Paket das folgende ausgedruckte Dokument:</h3>
-<br>
-		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
-</div>
-<br>
 
-<br>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4">
-		<h2 align = "right">Gerät:</h2>
-		</div>
-		<div class="col-md-4">
-      <input class="form-control" id="exampleInputEmail1"  type="text" placeholder="Modell, z.B.: iPohne Xs"></input>
-		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
-</div>
-<br>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4">
-		<h2 align = "right">Schaden:</h2>
-		</div>
-		<div class="col-md-4">
-      <input class="form-control" id="schaden" type="text" placeholder="Welcher Schaden liegt vor den wir reparieren sollen?"></input>
-		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
-</div>
-<br>
-
-
-
-<form>
-  <div class="form-group">
-    <div class="col text-center">
-        <button type="submit" class="btn btn-primary" id="laden">Einsende Dokument Laden</button>
-      </div>
-    </div>
-</form>
-
-
-
-
-
-<script>
-var doc = new jsPDF()
-document.querySelector("#laden").onclick = function () {
-    var newvar = document.getElementById("exampleInputEmail1").value
-    var doc = new jsPDF()
-    doc.text("Gerät: " + newvar + ".\r\n Gerät:" + newvar, 10, 10)
-    doc.save('info-mrsmart.pdf');
-    doc.output('dataurlnewwindow');
-}
-</script>
 
 
 
